@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FluxBoard | AI-Powered Project Management</title>
+    <meta name="description" content="FluxBoard is a modern, AI-powered project management platform.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header class="navbar hidden-on-load">
+        <div class="container nav-container">
+            <a href="#" class="logo">Flux<span>Board</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#workflow">Workflow</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <a href="#get-started" class="btn btn-primary magnetic">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-glow-1"></div>
+            <div class="hero-glow-2"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title stagger-text">
+                        <span class="text-line">Manage Projects</span>
+                        <span class="text-line">With <span class="gradient-text">AI Power</span></span>
+                    </h1>
+                    <p class="hero-subtitle stagger-text">FluxBoard organizes, predicts, and automates your team's workflow so you can focus on building.</p>
+                    <div class="hero-ctas stagger-text">
+                        <a href="#pricing" class="btn btn-primary magnetic">Start Free Trial</a>
+                        <a href="#features" class="btn btn-secondary magnetic">See Features</a>
+                    </div>
+                </div>
+                <div class="hero-visual stagger-img">
+                    <div class="dashboard-mockup parallax-element">
+                        <img src="assets/images/dashboard_mockup.png" alt="FluxBoard Dashboard Preview">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Everything you need, nothing you don't.</h2>
+                    <p>Designed for speed, efficiency, and clarity.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card reveal glass-card">
+                        <div class="icon-wrapper">🚀</div>
+                        <h3>AI Insights</h3>
+                        <p>Predictive analytics that spot bottlenecks before they delay your launch.</p>
+                    </div>
+                    <div class="feature-card reveal glass-card">
+                        <div class="icon-wrapper">⚡</div>
+                        <h3>Smart Automation</h3>
+                        <p>Automate repetitive tasks and let AI handle the heavy lifting of project setup.</p>
+                    </div>
+                    <div class="feature-card reveal glass-card">
+                        <div class="icon-wrapper">🔄</div>
+                        <h3>Team Sync</h3>
+                        <p>Real-time collaborative environments where your team is always aligned.</p>
+                    </div>
+                    <div class="feature-card reveal glass-card">
+                        <div class="icon-wrapper">📊</div>
+                        <h3>Live Analytics</h3>
+                        <p>Visualize progress with dynamic charts that update as work gets done.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Statistics Section -->
+        <section class="statistics" id="statistics">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item reveal">
+                        <h3 class="counter" data-target="10">0</h3><span class="stat-suffix">M+</span>
+                        <p>Tasks Managed</p>
+                    </div>
+                    <div class="stat-item reveal">
+                        <h3 class="counter" data-target="99.9">0</h3><span class="stat-suffix">%</span>
+                        <p>Uptime</p>
+                    </div>
+                    <div class="stat-item reveal">
+                        <h3 class="counter" data-target="5000">0</h3><span class="stat-suffix">+</span>
+                        <p>Active Teams</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline / Workflow Section -->
+        <section class="workflow" id="workflow">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>How it works</h2>
+                    <p>From idea to execution in record time.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-step reveal">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Create Project</h3>
+                            <p>Just tell FluxBoard what you're building in plain English.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step reveal">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>AI Organizes Tasks</h3>
+                            <p>Our engine automatically breaks down the project into manageable tasks and milestones.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step reveal">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Team Collaboration</h3>
+                            <p>Assign members, discuss details, and execute with precision.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step reveal">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Analytics Generated</h3>
+                            <p>Watch your velocity and completion rates in real-time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="section-header reveal">
+                <h2>Loved by Builders</h2>
+            </div>
+            <div class="marquee-container reveal">
+                <div class="marquee">
+                    <div class="testimonial-card glass-card">
+                        <p>"FluxBoard completely transformed how our engineering team operates. We save hours every week."</p>
+                        <div class="author">- Sarah J., CTO</div>
+                    </div>
+                    <div class="testimonial-card glass-card">
+                        <p>"The AI task generation is like having an extra project manager on staff. It's incredibly accurate."</p>
+                        <div class="author">- Mike T., Product Lead</div>
+                    </div>
+                    <div class="testimonial-card glass-card">
+                        <p>"Beautiful UI, blazing fast, and the predictive insights actually work. 10/10."</p>
+                        <div class="author">- Elena R., Founder</div>
+                    </div>
+                    <div class="testimonial-card glass-card">
+                        <p>"Finally a project management tool that doesn't feel like a chore to use."</p>
+                        <div class="author">- David K., Developer</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Simple, transparent pricing</h2>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card reveal glass-card">
+                        <h3>Starter</h3>
+                        <div class="price">$0<span>/mo</span></div>
+                        <ul>
+                            <li>Up to 3 projects</li>
+                            <li>Basic AI task breakdown</li>
+                            <li>Community support</li>
+                        </ul>
+                        <button class="btn btn-outline magnetic">Get Started</button>
+                    </div>
+                    <div class="pricing-card reveal glass-card popular">
+                        <div class="badge">Most Popular</div>
+                        <h3>Pro</h3>
+                        <div class="price">$29<span>/mo</span></div>
+                        <ul>
+                            <li>Unlimited projects</li>
+                            <li>Advanced AI predictions</li>
+                            <li>Custom workflows</li>
+                            <li>Priority support</li>
+                        </ul>
+                        <button class="btn btn-primary magnetic">Start Free Trial</button>
+                    </div>
+                    <div class="pricing-card reveal glass-card">
+                        <h3>Enterprise</h3>
+                        <div class="price">Custom</div>
+                        <ul>
+                            <li>Dedicated AI models</li>
+                            <li>SSO & Advanced Security</li>
+                            <li>24/7 SLA</li>
+                        </ul>
+                        <button class="btn btn-outline magnetic">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Flux<span>Board</span></a>
+                    <p>The operating system for modern product teams.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary magnetic">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FluxBoard. All rights reserved. (Fictional Project)</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">𝕏</a>
+                    <a href="#" aria-label="GitHub">GH</a>
+                    <a href="#" aria-label="LinkedIn">IN</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
